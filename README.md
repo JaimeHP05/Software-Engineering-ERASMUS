@@ -8,20 +8,20 @@ It automates bureaucratic tasks through dynamic **PDF generation**, real-time **
 
 ## Key Features
 
-### 🎓 Student Module
+### Student Module
 * **Dashboard:** View the status of all mobility applications (Draft, Approved, Rejected).
 * **Create Agreement:** Intuitive form to select destination universities and duration.
 * **AI Course Matching:** Intelligent "Auto-Match" button that suggests the best destination course based on text similarity algorithms.
 * **Automated Documentation:** Instant generation and download of the official Learning Agreement in PDF format.
 * **Notifications:** Receive email updates with attached documents whenever an agreement is created or its status changes.
 
-### 🛠️ Administrator Module
+### Administrator Module
 * **Analytics Dashboard:** Visual statistics (Chart.js) showing agreement status distribution and top destinations.
 * **Agreement Management:** Search, review, approve, or reject student agreements.
 * **Data Management (CRUD):** Full control to create and manage Users, Universities, Degrees, and Courses (including credits and periods).
 * **Announcements:** Publish news segmented by target audience (Specific Degree, Specific University, or Global).
 
-### ⚙️ Technical Architecture
+### Technical Architecture
 * **Frontend:** HTML5, Tailwind CSS, Vanilla JavaScript.
 * **Backend:** Node.js, Express.js.
 * **Database:** SQLite (Relational persistence).
@@ -67,6 +67,26 @@ It automates bureaucratic tasks through dynamic **PDF generation**, real-time **
 
 5.  **Run the Application:**
     Open the `frontend/index.html` file in your web browser (or navigate to `http://localhost:3000` if serving statically).
+
+## Running Automated Tests
+
+The project includes a suite of **Integration Tests** using **Jest** and **Supertest**. These tests verify the API endpoints, the AI algorithm logic, PDF generation, and database integrity against the live server.
+
+**How to run them:**
+
+1.  **Terminal 1:** Start the server (if not already running).
+    ```bash
+    cd backend
+    npm start
+    ```
+
+2.  **Terminal 2:** Run the test suite.
+    ```bash
+    cd backend
+    npx jest server.test.js
+    ```
+
+You should see a pass/fail report for tests covering: Login, AI Recommendations, PDF Downloads, and Admin Statistics.
 
 ## Usage / Default Credentials
 
