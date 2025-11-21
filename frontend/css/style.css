@@ -1,0 +1,13 @@
+.gradient-bg {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+.sidebar {
+    transition: all 0.3s ease;
+}
+
+.course-checkbox:checked + label {
+    background-color: #e0e7ff;
+    border-color: #818cf8;
+    font-weight: 500;
+}
