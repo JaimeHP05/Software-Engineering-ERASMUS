@@ -39,8 +39,8 @@ It automates bureaucratic tasks through dynamic **PDF generation**, real-time **
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/JaimeHP05/SICUE_304](https://github.com/JaimeHP05/SICUE_304)
-    cd SICUE_304
+    git clone [https://github.com/JaimeHP05/Software-Engineering-ERASMUS.git](https://github.com/JaimeHP05/Software-Engineering-ERASMUS.git)
+    cd Software-Engineering-ERASMUS
     ```
 
 2.  **Navigate to the backend directory and install dependencies:**
